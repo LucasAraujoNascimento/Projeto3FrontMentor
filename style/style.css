@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    text-decoration: none;
+    list-style: none;
+
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* MENU */
+
+.container{
+    background-image:url(../images/image-hero.jpg);
+    background-size: cover;
+    height: 100vh;
+
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    top: 10%
+}
+
+header .logo{
+    color: rgb(196, 185, 185);
+    font-size: 2em;
+    position: relative;
+    left: 10%;
+    font-weight: 700;
+}
+
+nav .menu{
+    display:flex;
+    margin-right: 100px;
+}
+
+nav .menu li {
+    padding: 0px 10px;
+}
+
+nav .menu li a {
+    color: rgb(196, 185, 185);
+    font-weight: 600;
+}
+
+nav .menu li a:hover, header .logo:hover {
+    padding: 0px 10px;
+    color: gray;
+}
+
+.text{
+    display:inline-block;
+    position: relative;
+    top: 30%;
+    left: 10%;
+
+    color: rgb(196, 185, 185);
+    font-size: 4.5em;
+
+    border: 1px solid rgb(196, 185, 185);
+    width: 40%;
+
+    text-align: left;
+    padding: 40px 30px;
+    line-height: 110%;
+    font-weight: 100;
+}
+
+/* Section */
+
+.image{
+    height: 100vh;
+    display:flex;
+}
+
+.image img{
+    width: 60%;
+    height: 70%;
+    position: relative;
+    top: 15%;
+    left: 15%;
+}
+
+.text2{
+    background-color: white;
+    position: relative;
+    top: 250px;
+    width: 35%;
+    height: 50%;
+
+
+
+}
+
+.text2 h2{
+    font-size:3rem;
+    font-weight: 100;
+    padding: 10px;
+    padding-left: 40px;
+    line-height: 100%;
+    padding-top: 70px;
+}
+
+.text2 p{
+    font-size: 0.9em;
+    padding-left: 40px;
+    color: gray;
+}
+
+/* Segunda Section */
+
+.text3{
+    font-size: 2em;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    right: 50px;
+}
+
+.text3 a{
+    font-size: 1rem;
+    color: black;
+    padding: 10px 30px;
+    border-style: solid;
+    font-weight:bold;
+
+    position: relative;
+    left: 200px;
+
+    transition:background-color 500ms, padding 500ms;
+}
+
+.text3 a:hover{
+    background:black;
+    color:white;
+    border: 2px solid black;
+    padding: 12px 40px;
+}
+
+.imagens{
+    display: grid;
+    grid-template: auto auto auto auto / auto auto auto auto;
+    justify-content: center;
+    gap: 15px;
+    margin-left: 100px;
+    margin-top: 30px;
+    padding-bottom: 200px;
+
+    
+}
+
+.imagens img{
+    width: 100%;
+
+}
+
+.images a {
+    position: relative;
+    
+}
+
+.imagens a:hover{
+    position: relative;
+    bottom: 20px;
+    
+}
+
+/* FOOTER */
+
+footer{
+    background: black;
+    color: white;
+}
+
+.logo2{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.logo2 div ul{
+    display: flex;
+    padding: 50px 0px;
+}
+
+.logo2 div ul a{
+    padding: 10px;
+    margin-left: 60px;
+}
+
+.eu{
+    text-align:center;
+    padding-bottom: 50px;
+}
+
+@media (max-width: 768px){
+
+    .container{
+    background: url(../image-mobile/image-hero.jpg) no-repeat;
+    background-size: cover;
+    }
+
+    nav .menu{
+        display: none;
+    }
+
+    .text{
+        position: relative;
+        top: 30%;
+        left: 10%;
+    
+        font-size: 5em;
+    
+        width: 70%;
+    
+        text-align: left;
+        padding: 10px 10px;
+    }
+
+    .text2{     
+        font-size: 0.5em;
+        text-align: center;
+        padding-left: 0px;
+        width: 60%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        order: -1;
+        margin-top: 100px;
+        margin-left: 30%;
+        width: 100%;
+        
+    }
+
+    .text3{
+        width: 650px;
+        margin-top: 100px;
+        margin-bottom: 50px;
+    }
+
+    .image{
+        background-image: url(../image-mobile/image-interactive.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        
+    }
+
+    .image img{
+        display:none;
+    }
+
+    .imagens{
+        margin-right: 100px;
+    }
+
+
+}
